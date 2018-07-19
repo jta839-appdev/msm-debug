@@ -23,7 +23,7 @@ Rails.application.routes.draw do
 
   # CREATE
   get("/directors/new_form", { :controller => "directors", :action => "new_form" })
-  post("/create_director", { :controller => "director", :action => "create_row" })
+  post("/create_director", { :controller => "directors", :action => "create_row" })
 
   # READ
   get("/directors", { :controller => "directors", :action => "index" })
